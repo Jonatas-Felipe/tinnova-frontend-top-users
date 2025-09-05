@@ -243,7 +243,7 @@ const Users: React.FC = () => {
 
         Toast.fire({
           icon: 'success',
-          iconColor: '#ec6724',
+          iconColor: '#6161ff',
           title: `Usuário ${inUpdate ? 'editado' : 'criado'} com sucesso`,
         });
 
@@ -266,7 +266,7 @@ const Users: React.FC = () => {
       text: "Você não poderá reverter isso!",
       icon: 'warning',
       showCancelButton: true,
-      confirmButtonColor: '#ec6724',
+      confirmButtonColor: '#6161ff',
       cancelButtonColor: '#d33',
       confirmButtonText: 'Sim, deletar!',
       cancelButtonText: 'Cancelar',
@@ -277,7 +277,7 @@ const Users: React.FC = () => {
       handleLoadUsers(pageSelected);
       Toast.fire({
         icon: 'success',
-        iconColor: '#ec6724',
+        iconColor: '#6161ff',
         title: 'Usuário deletado com sucesso',
       })
     }
@@ -285,7 +285,7 @@ const Users: React.FC = () => {
       console.log(error);
       Toast.fire({
       icon: 'error',
-      iconColor: '#ec6724',
+      iconColor: '#6161ff',
       title: 'Ocorreu um erro, tente novamente',
     })
     })

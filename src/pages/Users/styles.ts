@@ -22,7 +22,7 @@ export const Table = styled.div`
   .header{
     padding: 10px;
     margin-bottom: 10px;
-    background-color: #ff6900;
+    background-color: #6161ff;
 
     .table-cell{
       color: #fff;
@@ -124,10 +124,10 @@ export const Toggle = styled.button<IToggle>`
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  border: 1px solid ${props => props.active ? '#ff6900' : '#202020'};
+  border: 1px solid ${props => props.active ? '#6161ff' : '#202020'};
   border-radius: 50px;
   position: relative;
-  background-color: ${props => props.active ? '#ff6900' : 'transparent'};
+  background-color: ${props => props.active ? '#6161ff' : 'transparent'};
   transition-duration: 0.3s;
 
   div{
