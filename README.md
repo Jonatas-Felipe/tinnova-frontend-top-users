@@ -1,4 +1,4 @@
-# 🥸 Teste Front-end Teddy
+<!-- # 🥸 Teste Front-end Teddy
 
 ## 📝 Descrição
 
@@ -124,4 +124,4 @@ A aplicação estará disponível em `http://localhost:8080`.
 Este projeto é apenas para fins de estudo/desafio técnico.
 
 ---
-
+ -->
