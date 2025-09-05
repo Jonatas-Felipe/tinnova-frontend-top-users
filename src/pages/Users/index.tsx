@@ -263,7 +263,7 @@ const Users: React.FC = () => {
   const handleClickDeleteUser = useCallback(async (user_id: string) => {
     Swal.fire({
       title: 'Tem certeza?',
-      text: "Voce nao podera reverter isso!",
+      text: "Você não poderá reverter isso!",
       icon: 'warning',
       showCancelButton: true,
       confirmButtonColor: '#ec6724',
