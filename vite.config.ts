@@ -3,9 +3,11 @@ import react from '@vitejs/plugin-react';
 import { federation } from '@module-federation/vite';
 import path from 'path';
 
+const isTest = process.env.VITEST;
+
 export default defineConfig({
   plugins: [
-    federation({
+    !isTest && federation({
       name: 'topUsers',
       remotes: {
         mainFront: {
@@ -40,5 +42,15 @@ export default defineConfig({
     alias: {
       '~': path.resolve(__dirname, 'src'),
     },
+  },
+  test: {
+    globals: true,
+    environment: 'jsdom',
+    setupFiles: './src/setupTests.ts',
+    exclude: [
+      'node_modules/**',
+      'dist/**',
+      '**/*.config.{js,ts}',
+    ],
   },
 });

@@ -329,46 +329,46 @@ const Users: React.FC = () => {
                 )}
                 {users.map(user => (
                   <div key={user.id} className="table-row">
-                  <div className="table-cell text-center text-md-start">
-                    <span className='d-block d-md-none fw-bold'>Nome</span>
-                    {user.name}
-                  </div>
-                  <div className="table-cell text-center text-md-start">
-                    <span className='d-block d-md-none fw-bold'>E-mail</span>
-                    {user.email}
-                  </div>
-                  <div className="table-cell text-center text-md-start">
-                    <span className='d-block d-md-none fw-bold'>Endereço</span>
-                    {user.address}
-                  </div>
-                  <div className="table-cell text-center text-md-start">
-                    <span className='d-block d-md-none fw-bold'>Status</span>
-                    <Toggle
-                      active={user.status === 'ativo'}
-                      onClick={() => handleChangeStatus(user.id, user.status)}
-                    >
-                      <div />
-                    </Toggle>
-                  </div>
-                  <div className="table-cell text-center text-md-start">
-                    <div className="d-flex justify-content-end">
-                      <button
-                        type="button"
-                        className='btn btn-primary rounded-circle d-flex align-items-center justify-content-center'
-                        onClick={() => handleClickEditUser(user.id)}
+                    <div className="table-cell text-center text-md-start">
+                      <span className='d-block d-md-none fw-bold'>Nome</span>
+                      {user.name}
+                    </div>
+                    <div className="table-cell text-center text-md-start">
+                      <span className='d-block d-md-none fw-bold'>E-mail</span>
+                      {user.email}
+                    </div>
+                    <div className="table-cell text-center text-md-start">
+                      <span className='d-block d-md-none fw-bold'>Endereço</span>
+                      {user.address}
+                    </div>
+                    <div className="table-cell text-center text-md-start">
+                      <span className='d-block d-md-none fw-bold'>Status</span>
+                      <Toggle
+                        active={user.status === 'ativo'}
+                        onClick={() => handleChangeStatus(user.id, user.status)}
                       >
-                          <MdModeEdit size={20} color='#fff' />
-                      </button>
-                      <button
-                        type="button"
-                        className='btn btn-delete rounded-circle d-flex align-items-center justify-content-center ms-2'
-                        onClick={() => handleClickDeleteUser(user.id)}
-                      >
-                        <BsFillTrash3Fill size={20} color='#fff' />
-                      </button>
+                        <div />
+                      </Toggle>
+                    </div>
+                    <div className="table-cell text-center text-md-start">
+                      <div className="d-flex justify-content-end">
+                        <button
+                          type="button"
+                          className='btn btn-primary rounded-circle d-flex align-items-center justify-content-center'
+                          onClick={() => handleClickEditUser(user.id)}
+                        >
+                            <MdModeEdit size={20} color='#fff' />
+                        </button>
+                        <button
+                          type="button"
+                          className='btn btn-delete rounded-circle d-flex align-items-center justify-content-center ms-2'
+                          onClick={() => handleClickDeleteUser(user.id)}
+                        >
+                          <BsFillTrash3Fill size={20} color='#fff' />
+                        </button>
+                      </div>
                     </div>
                   </div>
-                </div>
                 ))}
               </div>
             </Table>
