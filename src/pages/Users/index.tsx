@@ -231,7 +231,6 @@ const Users: React.FC = () => {
             newUsers[index].name = data.name;
             newUsers[index].email = data.email;
             newUsers[index].address = `${data.street}, ${data.number} - ${data.neighborhood}, ${data.city} - ${data.state} CEP: ${data.zipcode}`;
-            newUsers[index].status = data.status;
           }
           setUsers(newUsers);
         } else {
